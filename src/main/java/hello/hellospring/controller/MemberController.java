@@ -9,8 +9,20 @@ public class MemberController {
 
     private final MemberService memberService;
 
+    //필드 주입
+//    @Autowired private MemberService memberService;
+
+    //생성자 주입 (추천)
     @Autowired
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
     }
+
+
+
+    //setter 주입
+//    @Autowired
+//    public void setMemberService(MemberService memberService) {
+//
+//    }
 }
