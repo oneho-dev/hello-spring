@@ -5,5 +5,3 @@ create table member
     name varchar(255),
     primary key (id)
 );
-
-select * from member
